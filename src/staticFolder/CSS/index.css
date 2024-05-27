@@ -1,0 +1,26 @@
+
+body{
+    background-color: #f5f5f5;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.menuButton {
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(56,118,29, .7);
+}
+
+.container #homeButton {
+    margin-right: 100px;
+}
+
+
