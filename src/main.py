@@ -6,9 +6,14 @@ app = Flask(__name__, static_folder='./staticFolder')
 @app.route("/")
 def index():
     return send_file('HTML/index.html')
-    return send_file('CSS/index.css')
-    return send_file('IMG/bench-tree.png')
-    return send_file('IMG/house-chimney.png')
+
+@app.route("/home")
+def home():
+    return send_file('HTML/home.html')
+
+@app.route("/outdoors")
+def outdoors():
+    return send_file('HTML/outdoors.html')
 
 def main():
     app.run(port=int(os.environ.get('PORT', 80)))
